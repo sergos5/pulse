@@ -1,0 +1,30 @@
+@import 'base/variables';
+@import 'base/mixins';
+
+* {
+    font-family: 'Museo Sans Cyrl', "sans-serif";
+}
+
+.contant {
+    width: 950px;
+    margin: 0 auto;
+    }
+
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/button';
+@import 'blocks/advantage';
+@import 'blocks/title';
+
+
+@media (max-width: 991px) {
+    .contant {
+        width: 730px;
+        }
+}
+
+@media (max-width: 767px) {
+    .contant {
+        width: 550px;
+        }
+}
