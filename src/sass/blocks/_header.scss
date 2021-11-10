@@ -44,14 +44,10 @@
             text-decoration: none;
         }
     }
-    
-
 }
 
 @media (max-width:767px) {
     .header {
-        
-
         > div {
             width: 50%;
         }
@@ -59,8 +55,6 @@
             font-weight: 500;
         }
     }
-
-
     .visible {
         display: none;
     }
