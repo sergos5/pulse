@@ -10,6 +10,10 @@
     text-transform: uppercase;
     color: #FFFFFF;
     outline: 0 none !important;
+    transition: 0.5s all;
+    &:hover {
+        box-shadow: 3px 3px 20px $main-color;
+    }
     &:active {
         background-color: rgb(136, 4, 4);
     }
@@ -20,7 +24,7 @@
         margin-top: 67px;
     }
     &_submit {
-        width: 303px;
+        width: 100%;
         height: 58px;
         font-weight: 500;
         font-size: 16px;
@@ -31,4 +35,17 @@
         font-size: 14px;
     }    
        
+}
+
+@media (max-width:575px) {
+    .button {
+        &_header {
+            width: 125px;
+            height: 30px;
+        }
+        &_main {
+            margin-top: 50px;
+        }
+        
+    }
 }

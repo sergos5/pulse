@@ -16,4 +16,30 @@
     &_catalog {
         font-weight: 500;
     }
+    &_reviews {
+        padding-bottom: 60px;
+    }
+}
+
+@media (max-width: 767px) {
+    .title {
+        &_left {
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .title {
+        &_left {
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+        }
+        &_catalog {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
 }
