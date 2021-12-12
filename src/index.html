@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="icon" href="icons/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/slick.css"/>    
+	<link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Pulse</title>
 </head>
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="holder">
             <header class="header">
                 <div>
@@ -53,7 +54,7 @@
                     </div>
                 </div>
                 <button class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>
-                <div class="promo__link">или <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a></div>
+                <div class="promo__link">или <a href="#product">ПЕРЕЙТИ В КАТАЛОГ</a></div>
             </div>
             
         </div>
@@ -83,20 +84,20 @@
         </div>
     </section>
 
-    <section class="consultation">
+    <section class="consultation animate__animated animate__fadeIn animate__slower wow">
         <div class="holder">
             <h2 class="title title_left">Получите бесплатную консультацию<br>по подбору пульсометра</h2>
             <div class="consultation__descr">Просто заполните форму заявки<br> и мы перезвоним вам в течении 10 минут</div>    
             <form class="feed-form" action="#">
                 <input name="name" type="text" required placeholder="Ваше имя">
-                <input name="tel" type="tel" required placeholder="Ваш телефон">
+                <input name="phone" type="tel" required placeholder="Ваш телефон">
                 <input name="email" type="email" required placeholder="Ваше e-mail">
                 <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
         </div>
     </section>
 
-    <div class="carousel">
+    <div class="carousel animate__animated animate__fadeIn animate__slower wow">
         <div class="holder">
             <div class="carousel__inner">
                 <div><img src="img/carousel/slide_1.jpg" alt="slide"></div>
@@ -106,7 +107,7 @@
         </div>
     </div>
 
-    <section class="catalog">
+    <section id="product" class="catalog animate__animated animate__fadeIn animate__slower wow">
         <div class="holder">
             <h2 class="title title_catalog">Каталог пульсометров</h2>
             <ul class="catalog__tabs">
@@ -368,7 +369,7 @@
 
     <section class="reviews">
       <div class="holder">
-        <div class="reviews__item">
+        <div class="reviews__item animate__animated animate__fadeInUp animate__slow wow">
           <img src="img/photo/photo_1.jpg" alt="photo_1">
           <div>
             <div class="reviews__name">Ирина Иванченко</div>
@@ -377,7 +378,7 @@
             Спасибо, RunSmart! </div>
           </div>
         </div>
-        <div class="reviews__item">
+        <div class="reviews__item animate__animated animate__fadeInUp animate__slow wow">
           <img src="img/photo/photo_2.jpg" alt="photo_2">
           <div>
             <div class="reviews__name">Иван Сёмочкин</div>
@@ -385,7 +386,7 @@
             <div class="reviews__text">Крутая штука-пульсометр. Обычно без них бегал. Оказывается только хуже себе делал.<br> Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели первую тренировку, научили пользоваться новым гаджетом. Также объяснили основы анатомии, составили план тренировок на месяц вперёд. <br><br> С ними подготовился к своему первому полумарафону! Спасибо!!!</div>
           </div>
         </div>
-        <div class="reviews__item">
+        <div class="reviews__item animate__animated animate__fadeInUp animate__slow wow">
           <img src="img/photo/photo_3.jpg" alt="photo_3">
           <div>
             <div class="reviews__name">Юлия Дашкина</div>
@@ -396,24 +397,63 @@
       </div>
     </section>
 
-    <footer class="footer">
-      <div class="footer__info">
-        <address class="footer__addr">Москва, Мясницкий проезд, д.3с1</address>
-        <a href="tel:+74999228974" class="footer__phone">8 (499) 922-89-74</a>
-        <div class="footer__social">
-          <a href="#" class="footer__social-item"><img src="icons/social/facebook.svg" alt="facebook"></a>
-          <a href="#" class="footer__social-item"><img src="icons/social/instagram.svg" alt="instagram"></a>
-          <a href="#" class="footer__social-item"><img src="icons/social/pinterest.svg" alt="pinterest"></a>
-        </div>        
-      </div>
-      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6c1212e58b15bd6ce9211a936e99f0a421331e973203fc0835b9e7f5769e06ed&amp;width=100%25&amp;height=630&amp;lang=ru_RU&amp;scroll=false"></script>
+    <footer class="footer animate__animated animate__fadeIn animate__slower wow">
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6c1212e58b15bd6ce9211a936e99f0a421331e973203fc0835b9e7f5769e06ed&amp;width=100%25&amp;height=630&amp;lang=ru_RU&amp;scroll=false"></script>
+		<div class="footer__info">
+			<address class="footer__addr">Москва, Мясницкий проезд, д.3с1</address>
+			<a href="tel:+74999228974" class="footer__phone">8 (499) 922-89-74</a>
+			<div class="footer__social">
+			<a href="#" class="footer__social-item"><img src="icons/social/facebook.svg" alt="facebook"></a>
+			<a href="#" class="footer__social-item"><img src="icons/social/instagram.svg" alt="instagram"></a>
+			<a href="#" class="footer__social-item"><img src="icons/social/pinterest.svg" alt="pinterest"></a>
+			</div>        
+		</div>      
     </footer>
+
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Просто заполните форму заявки</div>
+            <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+            <form class="feed-form feed-form_mt25" action="#">
+                <input name="name" type="text" placeholder="Ваше имя">
+                <input name="phone" required placeholder="Ваш телефон">
+                <input name="email" type="email" placeholder="Ваше e-mail">
+                <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
+            </form>
+        </div>
+
+        <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Ваш заказ:</div>
+            <div class="modal__descr">Пульсометр Polar FT1</div>
+            <form class="feed-form feed-form_mt25" action="#">
+                <input name="name" type="text" placeholder="Ваше имя">
+                <input name="phone" required placeholder="Ваш телефон">
+                <input name="email" type="email" placeholder="Ваше e-mail">
+                <button class="button button_submit">КУПИТЬ</button>
+            </form>
+        </div>
+
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+            <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
+        </div>
+    </div>
+
+	<a href="#up" class="pageup">
+        <img src="icons/up.svg" alt="up">
+    </a>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
     <script src="js/slick.min.js"></script>   
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/jquery.maskedinput.js"></script>
+	<script src="js/wow.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
