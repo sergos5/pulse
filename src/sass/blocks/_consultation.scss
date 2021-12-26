@@ -1,5 +1,5 @@
 .consultation{
-    min-height: 680px;
+    height: 680px;
     background: url(../img/bg/consultation.jpg) center (center/cover) no-repeat;
     padding: 100px 0 108px 0;
     &__descr{
@@ -12,18 +12,22 @@
         color: #fff;
     }
 }
-
+@media (max-width: 991px) {
+    .consultation {
+        padding: 80px 0;        
+    }
+}
 @media (max-width: 767px) {
     .consultation {
-        padding: 80px 0;
-        min-height: 650px;
+        padding: 65px 0;
+        height: 650px;
     }
 }
 
 @media (max-width: 575px) {
     .consultation {
         padding: 50px 0;
-        min-height: 533px;
+        height: 580px;
         &__descr {
             font-weight: 500;
             font-size: 15px;
